@@ -51,7 +51,7 @@ export class Productscreen extends Component {
     componentDidMount() {
         // this.setState({isLoading: false});
 
-        axios.get('http://34.86.60.208/api/p/')
+        axios.get('https://backend.chennaicaters.com/api/p/')
             .then(res => {
                 this.setState({
                     cc: res.data,

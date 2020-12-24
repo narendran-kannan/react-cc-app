@@ -17,14 +17,12 @@ export class Productdetails extends Component {
     componentDidMount() {
         // this.setState({isLoading: false})
         const productID = this.props.match.params.productID;
-        axios.get(`http://34.86.60.208/api/${productID}`)
+        axios.get(`https://backend.chennaicaters.com/api/${productID}`)
             .then(res => {
                 this.setState({
                     cv: res.data,
                     
                 });
-                console.log(this.state.cv);
-                console.log(this.state.cv.product_name)
 
 
             })

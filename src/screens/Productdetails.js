@@ -16,7 +16,7 @@ export class Productdetails extends Component {
   componentDidMount() {
     // this.setState({isLoading: false});
     const productID = this.props.match.params.productID;
-    axios.get(`http://34.86.60.208/api/p/${productID}`)
+    axios.get(`https://backend.chennaicaters.com/api/p/${productID}`)
       .then(res => {
         this.setState({
           cv: res.data,
